@@ -1,8 +1,26 @@
 aid: cloudphysics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cloudphysics.png
 name: CloudPhysics
-description: 'CloudPhysics is a company surfaced as a portfolio company of kleiner-perkins and added to
-  the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'CloudPhysics is a SaaS-based big-data analytics platform for virtualized
+  IT infrastructure, founded in 2011 and acquired by Hewlett Packard Enterprise in
+  2021. Deployed as the CloudPhysics Observer virtual appliance against VMware vSphere
+  / vCenter, it collects IT metadata and delivers data-driven insights for capacity
+  planning, cost optimization, migration assessment, and infrastructure health. It
+  is now part of HPE; cloudphysics.com redirects to HPE storage. CloudPhysics exposes
+  no public developer API of its own — the product consumes the VMware vCenter API
+  to gather metadata rather than publishing a developer-facing API, so this profile
+  carries identity and domain-security signal only.'
 url: https://raw.githubusercontent.com/api-evangelist/cloudphysics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +28,34 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: hpe
+x-acquired-year: 2021
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Enterprise
+- Analytics
+- Virtualization
+- VMware
+- Cloud Migration
+- Infrastructure
+- SaaS
 apis: []
+common:
+- type: DomainSecurity
+  url: security/cloudphysics-domain-security.yml
+- type: Website
+  url: https://www.cloudphysics.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
