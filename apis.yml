@@ -65,6 +65,11 @@ tags_raw:
 - SaaS
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/hewlett-packard-enterprise/
+  name: Hewlett Packard Enterprise
+  x-relationship: acquired
+  x-evidence: "CloudPhysics is a SaaS-based big-data analytics platform for virtualized IT infrastructure, founded in 2011 and acquired by Hewlett Packard Enterprise in 2021."
 - type: DomainSecurity
   url: security/cloudphysics-domain-security.yml
 - type: Website
